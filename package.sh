@@ -1,2 +1,2 @@
 #!/bin/bash
-zip -r pw-gen-ext.zip build
+zip -r -j pw-gen-ext.zip build/*
