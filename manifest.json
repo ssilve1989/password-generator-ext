@@ -9,9 +9,6 @@
 		"default_popup": "popup.html"
 	},
 	"author"                 : "Steven Silvestri <steven.m.silvestri@gmail.com>",
-	"background"             : {
-		"persistent": false
-	},
 	"permissions"            : [
 		"activeTab",
 		"storage",

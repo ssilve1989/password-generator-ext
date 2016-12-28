@@ -3,6 +3,7 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import PasswordGenerator from '../utils/PasswordGenerator';
 import ClipboardManager from './ClipboardManager';
+import Lock from 'material-ui/svg-icons/action/lock';
 
 class PasswordGeneratorForm extends React.Component {
 	constructor() {
@@ -25,7 +26,7 @@ class PasswordGeneratorForm extends React.Component {
 		return (
 			<section className="pg-component">
 				<form className="pg-form" onSubmit={ this.onSubmit }>
-					<legend>Secure Password Generator</legend>
+					<legend>Simple Password Assistant</legend>
 					<TextField
 						fullWidth={ true }
 						hintText="Enter Simple Password"

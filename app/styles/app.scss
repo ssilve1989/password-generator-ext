@@ -2,7 +2,8 @@
 //@import '~font-awesome/css/font-awesome.css';
 
 body {
-	font-size : 13px;
+	font-size   : 13px;
+	font-family : 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .app-container {
@@ -10,42 +11,50 @@ body {
 	padding   : 1em;
 }
 
+// Tabs
+.settings-tab {
+	padding : 1em;
+}
+
+// Forms
+
 .pg-form {
 	&::after {
-		clear : both;
+		clear   : both;
 		display : block;
 		content : "";
 	}
 }
 
 .cb-form {
-	margin : 1em 0;
+	margin     : 1em 0;
 	text-align : center;
 }
 
 // animations
 .fade-appear {
-	opacity: 0.01;
+	opacity : 0.01;
 }
 
 .fade-appear.fade-appear-active {
-	opacity: 1;
-	transition: opacity .5s ease-in;
+	opacity    : 1;
+	transition : opacity .5s ease-in;
 }
+
 .fade-enter {
-	opacity: 0.01;
+	opacity : 0.01;
 }
 
 .fade-enter.fade-enter-active {
-	opacity: 1;
-	transition: opacity 500ms ease-in;
+	opacity    : 1;
+	transition : opacity 500ms ease-in;
 }
 
 .fade-leave {
-	opacity: 1;
+	opacity : 1;
 }
 
 .fade-leave.fade-leave-active {
-	opacity: 0.01;
-	transition: opacity 300ms ease-in;
+	opacity    : 0.01;
+	transition : opacity 300ms ease-in;
 }
