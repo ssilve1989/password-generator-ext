@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import PasswordGeneratorForm from './PasswordGeneratorForm';
+import PasswordGeneratorForm from './components/PasswordGeneratorForm';
 import './styles/app.scss';
 
 const App = props => (

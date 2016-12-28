@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import PasswordKeeper from './utils/PasswordKeeper';
+import PasswordGenerator from '../utils/PasswordGenerator';
 import ClipboardManager from './ClipboardManager';
 
 class PasswordGeneratorForm extends React.Component {
@@ -17,7 +17,7 @@ class PasswordGeneratorForm extends React.Component {
 	onSubmit = e => {
 		e.preventDefault();
 
-		const securePassword = PasswordKeeper.hash(this.state.text);
+		const securePassword = PasswordGenerator.hash(this.state.text);
 		this.setState({ securePassword });
 	};
 
