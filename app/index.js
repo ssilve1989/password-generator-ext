@@ -16,8 +16,9 @@ class App extends React.Component {
 	state = {};
 
 	resetData = () => {
-		localStorage.clear();
-		this.setState({ cleared: true })
+		chrome.storage.sync.clear(() => {
+			this.setState({ cleared: true })
+		});
 	};
 
 	render() {

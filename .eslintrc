@@ -10,8 +10,9 @@
 		"allowImportExportEverywhere": true
 	},
 	"globals"      : {
-		"grecaptcha": true,
-		"Environment" : true
+		"chrome"     : true,
+		"grecaptcha" : true,
+		"Environment": true
 	},
 	"env"          : {
 		"es6"    : true,

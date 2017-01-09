@@ -15,10 +15,10 @@ class PasswordGeneratorForm extends React.Component {
 	}
 
 	onChange = e => this.setState({ text: e.target.value });
-	onSubmit = e => {
+	onSubmit = async e => {
 		e.preventDefault();
 
-		const securePassword = PasswordGenerator.hash(this.state.text);
+		const securePassword = await PasswordGenerator.hash(this.state.text);
 		this.setState({ securePassword });
 	};
 
